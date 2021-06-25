@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+struct iris {
+    var seLength: Double
+    var seWidth: Double
+    var peLength: Double
+    var peWidth: Double
+    let irisClass: String
+}
+
+var irisTest: [iris] = []
+var irisDataSet: [iris] = []
+
+let irisArray: [iris] = [
+    iris(seLength: 5.1, seWidth: 3.5, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.9, seWidth: 3.0, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.7, seWidth: 3.2, peLength: 1.3, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.6, seWidth: 3.1, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.6, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.4, seWidth: 3.9, peLength: 1.7, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 4.6, seWidth: 3.4, peLength: 1.4, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.4, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.4, seWidth: 2.9, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.9, seWidth: 3.1, peLength: 1.5, peWidth: 0.1, irisClass: "Iris-setosa"),
+    iris(seLength: 5.4, seWidth: 3.7, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.8, seWidth: 3.4, peLength: 1.6, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.8, seWidth: 3.0, peLength: 1.4, peWidth: 0.1, irisClass: "Iris-setosa"),
+    iris(seLength: 4.3, seWidth: 3.0, peLength: 1.1, peWidth: 0.1, irisClass: "Iris-setosa"),
+    iris(seLength: 5.8, seWidth: 4.0, peLength: 1.2, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.7, seWidth: 4.4, peLength: 1.5, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 5.4, seWidth: 3.9, peLength: 1.3, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.5, peLength: 1.4, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 5.7, seWidth: 3.8, peLength: 1.7, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.8, peLength: 1.5, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 5.4, seWidth: 3.4, peLength: 1.7, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.7, peLength: 1.5, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 4.6, seWidth: 3.6, peLength: 1.0, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.3, peLength: 1.7, peWidth: 0.5, irisClass: "Iris-setosa"),
+    iris(seLength: 4.8, seWidth: 3.4, peLength: 1.9, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.0, peLength: 1.6, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.4, peLength: 1.6, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 5.2, seWidth: 3.5, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.2, seWidth: 3.4, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.7, seWidth: 3.2, peLength: 1.6, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.8, seWidth: 3.1, peLength: 1.6, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.4, seWidth: 3.4, peLength: 1.5, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 5.2, seWidth: 4.1, peLength: 1.5, peWidth: 0.1, irisClass: "Iris-setosa"),
+    iris(seLength: 5.5, seWidth: 4.2, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.9, seWidth: 3.1, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.2, peLength: 1.2, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.5, seWidth: 3.5, peLength: 1.3, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.9, seWidth: 3.6, peLength: 1.4, peWidth: 0.1, irisClass: "Iris-setosa"),
+    iris(seLength: 4.4, seWidth: 3.0, peLength: 1.3, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.4, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.5, peLength: 1.3, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 4.5, seWidth: 2.3, peLength: 1.3, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 4.4, seWidth: 3.2, peLength: 1.3, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.5, peLength: 1.6, peWidth: 0.6, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.8, peLength: 1.9, peWidth: 0.4, irisClass: "Iris-setosa"),
+    iris(seLength: 4.8, seWidth: 3.0, peLength: 1.4, peWidth: 0.3, irisClass: "Iris-setosa"),
+    iris(seLength: 5.1, seWidth: 3.8, peLength: 1.6, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 4.6, seWidth: 3.2, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.3, seWidth: 3.7, peLength: 1.5, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 5.0, seWidth: 3.3, peLength: 1.4, peWidth: 0.2, irisClass: "Iris-setosa"),
+    iris(seLength: 7.0, seWidth: 3.2, peLength: 4.7, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.4, seWidth: 3.2, peLength: 4.5, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.9, seWidth: 3.1, peLength: 4.9, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.5, seWidth: 2.3, peLength: 4.0, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.5, seWidth: 2.8, peLength: 4.6, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.7, seWidth: 2.8, peLength: 4.5, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.3, seWidth: 3.3, peLength: 4.7, peWidth: 1.6, irisClass: "Iris-versicolor"),
+    iris(seLength: 4.9, seWidth: 2.4, peLength: 3.3, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.6, seWidth: 2.9, peLength: 4.6, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.2, seWidth: 2.7, peLength: 3.9, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.0, seWidth: 2.0, peLength: 3.5, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.9, seWidth: 3.0, peLength: 4.2, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.0, seWidth: 2.2, peLength: 4.0, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.1, seWidth: 2.9, peLength: 4.7, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.6, seWidth: 2.9, peLength: 3.6, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.7, seWidth: 3.1, peLength: 4.4, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.6, seWidth: 3.0, peLength: 4.5, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.8, seWidth: 2.7, peLength: 4.1, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.2, seWidth: 2.2, peLength: 4.5, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.6, seWidth: 2.5, peLength: 3.9, peWidth: 1.1, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.9, seWidth: 3.2, peLength: 4.8, peWidth: 1.8, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.1, seWidth: 2.8, peLength: 4.0, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.3, seWidth: 2.5, peLength: 4.9, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.1, seWidth: 2.8, peLength: 4.7, peWidth: 1.2, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.4, seWidth: 2.9, peLength: 4.3, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.6, seWidth: 3.0, peLength: 4.4, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.8, seWidth: 2.8, peLength: 4.8, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.7, seWidth: 3.0, peLength: 5.0, peWidth: 1.7, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.0, seWidth: 2.9, peLength: 4.5, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.7, seWidth: 2.6, peLength: 3.5, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.5, seWidth: 2.4, peLength: 3.8, peWidth: 1.1, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.5, seWidth: 2.4, peLength: 3.7, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.8, seWidth: 2.7, peLength: 3.9, peWidth: 1.2, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.0, seWidth: 2.7, peLength: 5.1, peWidth: 1.6, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.4, seWidth: 3.0, peLength: 4.5, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.0, seWidth: 3.4, peLength: 4.5, peWidth: 1.6, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.7, seWidth: 3.1, peLength: 4.7, peWidth: 1.5, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.3, seWidth: 2.3, peLength: 4.4, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.6, seWidth: 3.0, peLength: 4.1, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.5, seWidth: 2.5, peLength: 4.0, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.5, seWidth: 2.6, peLength: 4.4, peWidth: 1.2, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.1, seWidth: 3.0, peLength: 4.6, peWidth: 1.4, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.8, seWidth: 2.6, peLength: 4.0, peWidth: 1.2, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.0, seWidth: 2.3, peLength: 3.3, peWidth: 1.0, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.6, seWidth: 2.7, peLength: 4.2, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.7, seWidth: 3.0, peLength: 4.2, peWidth: 1.2, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.7, seWidth: 2.9, peLength: 4.2, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.2, seWidth: 2.9, peLength: 4.3, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.1, seWidth: 2.5, peLength: 3.0, peWidth: 1.1, irisClass: "Iris-versicolor"),
+    iris(seLength: 5.7, seWidth: 2.8, peLength: 4.1, peWidth: 1.3, irisClass: "Iris-versicolor"),
+    iris(seLength: 6.3, seWidth: 3.3, peLength: 6.0, peWidth: 2.5, irisClass: "Iris-virginica"),
+    iris(seLength: 5.8, seWidth: 2.7, peLength: 5.1, peWidth: 1.9, irisClass: "Iris-virginica"),
+    iris(seLength: 7.1, seWidth: 3.0, peLength: 5.9, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 6.3, seWidth: 2.9, peLength: 5.6, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.5, seWidth: 3.0, peLength: 5.8, peWidth: 2.2, irisClass: "Iris-virginica"),
+    iris(seLength: 7.6, seWidth: 3.0, peLength: 6.6, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 4.9, seWidth: 2.5, peLength: 4.5, peWidth: 1.7, irisClass: "Iris-virginica"),
+    iris(seLength: 7.3, seWidth: 2.9, peLength: 6.3, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.7, seWidth: 2.5, peLength: 5.8, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 7.2, seWidth: 3.6, peLength: 6.1, peWidth: 2.5, irisClass: "Iris-virginica"),
+    iris(seLength: 6.5, seWidth: 3.2, peLength: 5.1, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 6.4, seWidth: 2.7, peLength: 5.3, peWidth: 1.9, irisClass: "Iris-virginica"),
+    iris(seLength: 6.8, seWidth: 3.0, peLength: 5.5, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 5.7, seWidth: 2.5, peLength: 5.0, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 5.8, seWidth: 2.8, peLength: 5.1, peWidth: 2.4, irisClass: "Iris-virginica"),
+    iris(seLength: 6.4, seWidth: 3.2, peLength: 5.3, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 6.5, seWidth: 3.0, peLength: 5.5, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 7.7, seWidth: 3.8, peLength: 6.7, peWidth: 2.2, irisClass: "Iris-virginica"),
+    iris(seLength: 7.7, seWidth: 2.6, peLength: 6.9, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 6.0, seWidth: 2.2, peLength: 5.0, peWidth: 1.5, irisClass: "Iris-virginica"),
+    iris(seLength: 6.9, seWidth: 3.2, peLength: 5.7, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 5.6, seWidth: 2.8, peLength: 4.9, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 7.7, seWidth: 2.8, peLength: 6.7, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 6.3, seWidth: 2.7, peLength: 4.9, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.7, seWidth: 3.3, peLength: 5.7, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 7.2, seWidth: 3.2, peLength: 6.0, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.2, seWidth: 2.8, peLength: 4.8, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.1, seWidth: 3.0, peLength: 4.9, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.4, seWidth: 2.8, peLength: 5.6, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 7.2, seWidth: 3.0, peLength: 5.8, peWidth: 1.6, irisClass: "Iris-virginica"),
+    iris(seLength: 7.4, seWidth: 2.8, peLength: 6.1, peWidth: 1.9, irisClass: "Iris-virginica"),
+    iris(seLength: 7.9, seWidth: 3.8, peLength: 6.4, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 6.4, seWidth: 2.8, peLength: 5.6, peWidth: 2.2, irisClass: "Iris-virginica"),
+    iris(seLength: 6.3, seWidth: 2.8, peLength: 5.1, peWidth: 1.5, irisClass: "Iris-virginica"),
+    iris(seLength: 6.1, seWidth: 2.6, peLength: 5.6, peWidth: 1.4, irisClass: "Iris-virginica"),
+    iris(seLength: 7.7, seWidth: 3.0, peLength: 6.1, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 6.3, seWidth: 3.4, peLength: 5.6, peWidth: 2.4, irisClass: "Iris-virginica"),
+    iris(seLength: 6.4, seWidth: 3.1, peLength: 5.5, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.0, seWidth: 3.0, peLength: 4.8, peWidth: 1.8, irisClass: "Iris-virginica"),
+    iris(seLength: 6.9, seWidth: 3.1, peLength: 5.4, peWidth: 2.1, irisClass: "Iris-virginica"),
+    iris(seLength: 6.7, seWidth: 3.1, peLength: 5.6, peWidth: 2.4, irisClass: "Iris-virginica"),
+    iris(seLength: 6.9, seWidth: 3.1, peLength: 5.1, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 5.8, seWidth: 2.7, peLength: 5.1, peWidth: 1.9, irisClass: "Iris-virginica"),
+    iris(seLength: 6.8, seWidth: 3.2, peLength: 5.9, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 6.7, seWidth: 3.3, peLength: 5.7, peWidth: 2.5, irisClass: "Iris-virginica"),
+    iris(seLength: 6.7, seWidth: 3.0, peLength: 5.2, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 6.3, seWidth: 2.5, peLength: 5.0, peWidth: 1.9, irisClass: "Iris-virginica"),
+    iris(seLength: 6.5, seWidth: 3.0, peLength: 5.2, peWidth: 2.0, irisClass: "Iris-virginica"),
+    iris(seLength: 6.2, seWidth: 3.4, peLength: 5.4, peWidth: 2.3, irisClass: "Iris-virginica"),
+    iris(seLength: 5.9, seWidth: 3.0, peLength: 5.1, peWidth: 1.8, irisClass: "Iris-virginica"),
+]
+
+
+class DMC {
+    var ctrdSeto: iris = iris(seLength: 0, seWidth: 0, peLength: 0, peWidth: 0, irisClass: "Iris-setosa")
+    var quantiSeto: Double = 0
+    var ctrdVersi: iris = iris(seLength: 0, seWidth: 0, peLength: 0, peWidth: 0, irisClass: "Iris-versicolor")
+    var quantiVersi: Double = 0
+    var ctrdVirgi: iris = iris(seLength: 0, seWidth: 0, peLength: 0, peWidth: 0, irisClass: "Iris-virginica")
+    var quantiVirgi: Double = 0
+    
+    func fit(data: [iris]) {
+        
+        for irs in data {
+            if irs.irisClass == "Iris-setosa" {
+                ctrdSeto.seLength+=irs.seLength
+                ctrdSeto.seWidth+=irs.seWidth
+                ctrdSeto.peLength+=irs.peLength
+                ctrdSeto.peWidth+=irs.peWidth
+                quantiSeto+=1
+            }else if irs.irisClass == "Iris-versicolor" {
+                ctrdVersi.seLength+=irs.seLength
+                ctrdVersi.seWidth+=irs.seWidth
+                ctrdVersi.peLength+=irs.peLength
+                ctrdVersi.peWidth+=irs.peWidth
+                quantiVersi+=1
+            }else if irs.irisClass == "Iris-virginica" {
+                ctrdVirgi.seLength+=irs.seLength
+                ctrdVirgi.seWidth+=irs.seWidth
+                ctrdVirgi.peLength+=irs.peLength
+                ctrdVirgi.peWidth+=irs.peWidth
+                quantiVirgi+=1
+            }
+        }
+
+        ctrdSeto = getMedia(data: ctrdSeto, quanti: quantiSeto)
+        ctrdVersi = getMedia(data: ctrdVersi, quanti: quantiVersi)
+        ctrdVirgi = getMedia(data: ctrdVirgi, quanti: quantiVirgi)
+
+    }
+    
+    func predict(toKnow: iris) -&gt; String {
+        var distances: [Double] = []
+        distances.append(EuclidianDistance(x1: toKnow, x2: ctrdSeto))
+        distances.append(EuclidianDistance(x1: toKnow, x2: ctrdVersi))
+        distances.append(EuclidianDistance(x1: toKnow, x2: ctrdVirgi))
+        
+        let mim = distances.min()
+        
+        if distances[0] == mim {
+            return "Iris-setosa"
+        } else  if distances[1] == mim {
+            return "Iris-versicolor"
+        } else if distances[2] == mim {
+            return "Iris-virginica"
+        } 
+        return "Error"
+    }
+    
+    private func EuclidianDistance(x1: iris, x2: iris) -&gt; Double {
+        let seL = pow((x1.seLength - x2.seLength), 2)
+        let seW = pow((x1.seWidth - x2.seWidth), 2)
+        let peL = pow((x1.peLength - x2.peLength), 2)
+        let peW = pow((x1.peWidth - x2.peWidth), 2)
+        
+        return sqrt(seL + seW + peL + peW)
+    }
+    
+    func getMedia(data: iris, quanti: Double) -&gt; iris {
+        
+        let newIris = iris(seLength: data.seLength/quanti, seWidth: data.seWidth/quanti, peLength: data.peLength/quanti, peWidth: data.peWidth/quanti, irisClass: data.irisClass)
+        return newIris
+        
+    }
+    
+}
+
+func getDataAndTest(data: [iris]) -&gt; ([iris], [iris]) {
+    
+    var dataSet: [iris] = data
+    var test: [iris] = []
+    
+    for _ in (0..&lt;36) {
+        let randon = Int.random(in: 0..&lt;dataSet.count)
+        test.append(dataSet[randon])
+        dataSet.remove(at: randon)
+    }
+    
+    return (dataSet,test)
+}
+
+//  (irisDataSet, irisTest) = getDataAndTest(data: irisArray)
+////  print(irisDataSet.count, irisTest.count)
+
+let dmc = DMC()
+dmc.fit(data: irisArray)
+
+var accuracy: Double = 0
+var testAccuracy: Double = 0
+var testRepetition: Double = 20
+for _ in (0..&lt;Int(testRepetition)) {
+    (irisDataSet, irisTest) = getDataAndTest(data: irisArray)
+    
+    for testing in irisTest {
+        
+        var result = dmc.predict(toKnow: testing)
+        var nameIris = testing.irisClass
+        if result == nameIris {
+            testAccuracy+=1
+        }
+    }
+    accuracy+=testAccuracy/Double(irisTest.count)
+    print("The accuracy of test is \(testAccuracy/Double(irisTest.count)) %")
+    testAccuracy = 0
+}
+
+print("Total accuracy of DMC code is \(accuracy/testRepetition) %")
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 18586}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
