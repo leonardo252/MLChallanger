@@ -34,6 +34,7 @@ public class Perceptron {
         let error = type - valueY
         
         weight = updateWeight(data: arrayLearn, error: Double(error))
+        
         return error
     }
     
@@ -49,7 +50,6 @@ public class Perceptron {
                 let variable = Array<String>(newData[index][0...numberOfEntrance]).map( {Double($0)!})
 
                 let value = abs(learn(data: Array<Double>(variable[0..<numberOfEntrance]), type: variable[numberOfEntrance]))
-                
                 if( value == 0.0) {
                     right+=1
                 }
@@ -57,7 +57,6 @@ public class Perceptron {
             }
 
             percenteges+=(Double(right)/Double(data.count))
-//            print("Right: \(right) - Percentege: \(Double(right)/Double(data.count))")
             if (bestPercentage < (Double(right)/Double(data.count))) {
                 bestPercentage = (Double(right)/Double(data.count))
                 bestWeight = weight
@@ -82,13 +81,8 @@ public class Perceptron {
         }
         
         let valueY = getYValue(activation: activationU)
-//
-//        if (doubleValues[numberOfEntrance] == valueY) {
-//            print("Acertou mizeravi")
-//        }
-
-        return valueY
         
+        return valueY
     }
     
     public func predictWithBest(data: [String]) -> Double{
@@ -105,28 +99,23 @@ public class Perceptron {
         }
         
         let valueY = getYValue(activation: activationU)
-//
-//        if (doubleValues[numberOfEntrance] == valueY) {
-//            print("Acertou mizeravi")
-//        }
-
-        return valueY
         
+        return valueY
     }
     
     public func testePredict(data: [[String]]) -> Double {
      
         var right = 0
-        
         for element in data {
             
-            if (predict(data: element) == Double(element[numberOfEntrance])) {
+            let predicResult = predict(data: element)
+            if (predicResult == Double(element[numberOfEntrance])) {
                 right+=1
             }
+//            print("Result: \(predicResult) Predict: \(Double(element[numberOfEntrance])!)")
         }
         
         return Double(right)/Double(data.count)
-        
     }
     
     public func testePredictWithBestWeight(data: [[String]]) -> Double {
@@ -141,7 +130,6 @@ public class Perceptron {
         }
         
         return Double(right)/Double(data.count)
-        
     }
     
     func setWeightValues(entrances: Int) {
@@ -158,6 +146,7 @@ public class Perceptron {
         for index in (0..<weight.count) {
             newWeight.append(weight[index] + learnRate * error * data[index])
         }
+        
         return newWeight
     }
     

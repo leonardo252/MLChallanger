@@ -74,41 +74,55 @@ print(new.count)
 //print(Double.random(in: 1.0...2.0) * 1)
 */
 
-
+/*
 
 var (dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
 
-let perceptron = Perceptron(learnRateN: 0.30, nOfEntrance: 60, biasSignal: +1.0)
-
+let perceptron = Perceptron(learnRateN: 0.54, nOfEntrance: 60, biasSignal: -1.0)
 print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
 
-print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
-print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
+for index in (0..<5) {
+    print("Teste \(index)")
+    (dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
+    print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
+    print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
+}
+*/
 
+var (dataSet, tests) = getDataSets(data: banknoteData.shuffled(), numberOfTests: 100)
+
+let perceptron = Perceptron(learnRateN: 0.1, nOfEntrance: 4, biasSignal: 1.0)
+print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
+
+print(perceptron.testePredict(data: tests))
+(dataSet, tests) = getDataSets(data: banknoteData.shuffled(), numberOfTests: banknoteData.count/2)
+print(perceptron.testePredict(data: tests))
+print(perceptron.testePredict(data: banknoteData))
+print(perceptron.testePredictWithBestWeight(data: banknoteData))
 //print(perceptron.weight)
 //print(perceptron.bestPercentage)
 //print(perceptron.bestWeight)
 
 
-(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
-print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
+//(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
+//print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
 //print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
 //print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
 
-(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
-print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
+//(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
+//print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
 //print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
 //print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
 
-(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
-print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
+//(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
+//print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
 //print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
 //print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
 
-(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
-print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
-print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
-print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
+//(dataSet, tests) = getDataSets(data: sonarData, numberOfTests: 64)
+//print(perceptron.learnByEra(data: dataSet, numberOfEra: 500))
+//print("Accuracy of the tests: \(perceptron.testePredict(data: tests) * 100) %")
+//print("Accuracy of the tests: \(perceptron.testePredictWithBestWeight(data: tests) * 100) %")
 
 
 /*
